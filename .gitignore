@@ -1,0 +1,6 @@
+.idea
+
+/manifest.yml
+/local_dev.sh
+
+__pycache__

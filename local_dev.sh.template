@@ -1,0 +1,7 @@
+#!/usr/bin/env bash -ue
+
+export CREDHUB_SERVER=https://credhub-proxy.apps.pcf.example.com
+export CREDHUB_USER=example-broker
+export CREDHUB_PASS=my-password
+
+python broker.py

@@ -1,0 +1,14 @@
+---
+applications:
+  - name: credhub-broker-example
+    memory: 256M
+    instances: 1
+    buildpack: python_buildpack
+    env:
+        CREDHUB_SERVER: https://credhub.service.cf.internal:8844
+        CREDHUB_USER: example-broker
+        # todo: password should probably be called "secret", not "password"
+        CREDHUB_PASS: my-password
+        # todo: this likely the final solution:
+        # todo: Code should have a UAA secret, not an actual token, & code fetches own token
+        TOKEN: XXX

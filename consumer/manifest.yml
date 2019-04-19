@@ -1,0 +1,6 @@
+---
+applications:
+  - name: consumer-app
+    memory: 256M
+    instances: 1
+    buildpack: python_buildpack
