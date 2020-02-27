@@ -32,7 +32,7 @@ uaac client add my-broker \
 To manually get a token:
 
 ```bash
-uaac token client get v2-nozzle-test -s <my-broker client secret>
+uaac token client get my-broker -s <my-broker client secret>
 uaac context
 ``` 
 
